@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #252525;
+}
+.font-weight{
+    font-weight: 400;
+}
+.header{
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+.header__container{
+    display: flex;
+    background-color: #2B2B2B;
+    width: 11.6rem;
+    height: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    transition: width 0.5s;
+}
+.header__container:hover{
+    width:25rem;
+}
+
+.user-{
+    padding-bottom: 3.8rem;
+}
+.user- figure{
+    display: flex;
+    justify-content: center;
+}
+.user- .data-user{
+    transition: width 0.5s;
+    display: none;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.data-user>h1{
+    font-size: 2rem;
+    color: #ffffff;
+    display: block;
+}
+.data-user>h2{
+    font-size: 1.2rem;
+    color: #707070;
+    display: block;
+}
+
+.user-active{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.acciones{
+    display: flex;
+    height: 70%;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3rem;
+}
+.menu-boton{
+    color: white;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.menu-boton:active{
+    color: #707070;
+}
+.menu-boton > div{
+    display: none;
+}
+svg{
+    padding-right: 1rem;
+}
+.close-login{
+    display: flex;
+    padding: 3rem;
+    justify-items: center;
+}

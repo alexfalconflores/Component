@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevo.css">
+    
+</head>
+
+<body>
+    <div class="container" id="box-formulario">
+        <div class="box-formulario">
+            <form action="" method="post" autocomplete="off">
+                <label for="tipo-pago">
+                    <span>Tipo de Pago</span>
+                    <input type="text" id="tipo-pago" name="tipo-pago" placeholder="Nombre del tipo de pago" required autocomplete="off">
+                </label>
+                <label for="descripcion">
+                    <span>Descripción</span>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripcioón" required autocomplete="off">
+                </label>
+                <span>Imagen</span>
+                <div class="imagen-usuario-contenedor">
+                    <img class="imagen-usuario" src="./Asset/logo.png" alt="usuario">
+                </div>
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Arrastre su imagen o has click para cargar.</span>
+                    <input type="file" name="myFile" id="myFile" class="drop-zone__input" accept=".svg," >
+                </div>
+                <input type="submit" value="Guardar">
+                <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar">
+            </form>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./drag-drog-upload.js"></script>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

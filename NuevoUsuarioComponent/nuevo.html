@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevo.css">
+    
+</head>
+
+<body>
+    <div class="container" id="box-formulario">
+        <div class="box-formulario">
+            <form action="" method="post">
+                <h1 class="titulos">Personal</h1>
+                <hr>
+                <label for="nombre">
+                    <span>Nombres</span>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </label>
+                <label for="apellido">
+                    <span>Apellidos</span>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                </label>
+                <span>Tipo Documento</span>
+                <div class="btn-group">
+                    <div class="grupo-boton" role="documentos">
+                        <label for="dni"><input type="radio" name="documento" id="dni" value="DNI"><span>DNI</span></label>
+                        <label for="ruc"><input type="radio" name="documento" id="ruc" value="RUC"><span>RUC</span></label>
+                        <label for="cedula"><input type="radio" name="documento" id="cedula" value="Cédula"><span>Cédula</span></label>
+                        <label for="pasaporte"><input type="radio" name="documento" id="pasaporte" value="Pasaporte"><span>Pasaporte</span></label>
+                    </div>
+                </div>
+                <div class="documento-telefono-container">
+                    <label for="numero-documento">
+                        <span>Número Documento</span>
+                        <input type="number" id="numero-documento" name="numero-documento" placeholder="Numero Documento" min="0" required>
+                    </label>
+                    <label for="telefono">
+                        <span>Telefono</span>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+                    </label>
+                </div>
+                <label for="direccion">
+                    <span>Dirección</span>
+                    <input type="text" id="direccion" name="direccion" placeholder="Tu direccion" required>
+                </label>
+                <span>Imagen</span>
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Arrastre y suelte su archivo o haga click sobre mi para cargar</span>
+                    <input type="file" name="myFile" id="myFile" class="drop-zone__input" accept=".jpg, .png, .jpeg" >
+                </div>
+                <h1 class="titulos">Cuenta</h1>
+                <hr>
+                <span>Rol</span>
+                <div class="btn-group">
+                    <div class="grupo-boton" role="roles">
+                        <label for="administrador"><input type="radio" name="rol" id="administrador" value="administrador"><span>Administrador</span></label>
+                        <label for="cajero"><input type="radio" name="rol" id="cajero" value="cajero"><span>Cajero</span></label>
+                        <label for="vendedor"><input type="radio" name="rol" id="vendedor" value="vendedor"><span>Vendedor</span></label>
+                        <label for="almacenero"><input type="radio" name="rol" id="almacenero" value="almacenero"><span>Almacenero</span></label>
+                    </div>
+                </div>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                </label>
+                <label for="password">
+                    <span>Contraseña</span>
+                    <input type="password" id="password" name="password" placeholder="Tu Contraseña" required>
+                </label>
+                <input type="submit" value="Insertar">
+                <!-- <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a> -->
+                <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar">
+            </form>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./drag-drog-upload.js"></script>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

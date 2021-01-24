@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-bg-primary-dark: #252525;
+}
+html{
+    font-size: 62.5%;
+}
+body{  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: var(--color-bg-primary-dark);
+}
+.main{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+.search{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+}
+.search >.input{
+    display: inline-block;
+    background-color: #2B2B2B;
+    outline: none;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: inherit;
+    font-size: inherit;
+    height: 3.7rem;
+    padding-left: 2rem;
+    width: 28.9rem;
+}
+.search >div{
+    display: inline-flex;
+    align-items: center;
+    padding-right: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #2B2B2B;
+    height: 3.7rem;
+}
+.search div button{
+    background-color: transparent;
+    border: 0rem;
+}
+.search div button:hover{
+    cursor: pointer;
+    outline: none;
+}
+
+.search div button >i{
+    color: white;
+}
+
+.btn{
+    font-weight: 400;
+    margin-left: 6rem;
+    padding: 1rem 2rem;
+    border-radius: 1.8rem;
+    border: 0rem;
+    color: white;
+    font-size: 2rem;
+    background-color: #10bce3;
+}
+.btn:hover{
+    background-color: #31D2F2;
+    color: white;
+}
+.btn >.fas{
+    padding-right: 1rem;
+}

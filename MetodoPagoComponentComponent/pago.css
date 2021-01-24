@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+:root{
+    --color-bg-primary-dark: #252525;
+    --color-bg-pago-card:#707070;
+    --color-text:#ffffff;
+    --color-btn-edit-card:#ffffff;
+    --color-cicle-1:#dc3545;
+    --color-cicle-2: #ffc107;
+    --color-cicle-3:#3dd6af;
+    --color-logo-sol:#ffffff;
+
+    --color-scroll: #252525;
+    --color-scrollbar: #707070;
+    --color-scrollbar-rgba: rgba(112,112,112,.4);
+    --color-scrollbar-hover:#2b2b2b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+html{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-scrollbar);
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;   
+    background: var(--color-scroll);
+    border-radius: 5px;
+}
+::-webkit-scrollbar:hover {
+    background:var(--color-scrollbar-hover);
+}
+::-webkit-scrollbar:hover:active {
+    background: var(--color-scroll);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg-primary-dark);
+}
+.option-payment{
+    display: inline-block;
+    overflow: scroll;
+    width: 100%;
+    padding: 3rem;
+    position: relative;
+}
+.option-payment__container{
+    white-space: nowrap;
+    margin: 1rem 0rem;
+    padding-bottom: 1rem;
+}
+.pagos-card{
+    width: 19.4rem;
+    height: 12rem;
+    margin-right: 2rem;
+    display: inline-block;
+    transition: 450ms all;
+    -webkit-transition-origin: center left;
+    transform-origin: center left;
+    background-color: var(--color-bg-pago-card);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+.pagos-card:hover~.pagos-card{
+    -webkit-transform: translate3d(10rem,0rem,0rem);
+    transform: translate3d(2rem,0rem,0rem);
+}
+
+.option-payment__container:hover .pagos-card{
+    opacity: 0.3;
+}
+.option-payment__container:hover .pagos-card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.pagos-card:last-child{
+    margin-right: 0rem;
+}
+
+.up-card{
+    display: flex;
+    justify-content: space-between;
+    height:50%;
+}
+.logo-card{
+    display: flex;
+    width: 3rem;
+    height: 2rem;
+}
+.cicle1{
+    fill: var(--color-cicle-1);
+}
+.cicle2{
+    fill: var(--color-cicle-2);
+}
+.cicle3{
+    fill: var(--color-cicle-3);
+}
+.logo-cash{
+    fill: var(--color-logo-sol);
+}
+.icon{
+    display: flex;
+}
+.icon .edit a > i{
+    color: var(--color-btn-edit-card);
+    font-size: 1.6rem;
+    width:2.3rem;
+    height: 2.3rem;
+}
+.down-card{
+    display: flex;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.down-card > h1{
+    display: inline-block;
+    color: var(--color-text);
+}
+
+.down-card > h1:first-child{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.down-card > h1:last-child{
+    font-size: 1.6;
+    font-weight: 400;
+}

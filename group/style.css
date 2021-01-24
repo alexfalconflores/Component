@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.btn-group{
+    display: inline-block;
+    background-color: black;
+    width:calc(100% - label);
+    height: calc(100% - label);
+    border-radius: 1rem;
+}
+
+.grupo-boton{
+    display: inline-block;
+    background-color: #2B2B2B;
+    border-radius:1rem;
+    width:calc(100% - label);
+    height: calc(100% - label);
+}
+.grupo-boton label {
+    display: inline-block;
+    width: calc(label);
+    height: calc(label);
+    margin: 0rem;
+    background-color: #2B2B2B;
+    color: #707070;
+    cursor: pointer;
+    
+}
+.grupo-boton label:first-child{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.grupo-boton label:last-child{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.grupo-boton label span {
+    text-align: center;
+    font-size: 2rem;
+    padding: .6rem 1rem;
+    display: block;
+    font-weight: 400;
+}
+
+.grupo-boton label input {
+    position: absolute;            
+    display:none;
+}
+
+.grupo-boton input:checked + span {
+    position:relative;
+    top: -.3rem;
+    color: white;
+    cursor: default;
+}

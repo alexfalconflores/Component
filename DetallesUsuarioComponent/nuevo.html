@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevo.css">
+    
+</head>
+
+<body>
+    <div class="container" id="box-formulario">
+        <div class="box-formulario">
+            <form action="" method="post">
+                <h1 class="titulos">Personal</h1>
+                <hr>
+                <label for="nombre">
+                    <span>Nombres</span>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" disabled>
+                </label>
+                <label for="apellido">
+                    <span>Apellidos</span>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" disabled>
+                </label>
+                <span>Tipo Documento</span>
+                <div class="btn-group">
+                    <div class="grupo-boton" role="documentos">
+                        <label for="dni"><input type="radio" name="documento" id="dni" value="DNI" disabled><span>DNI</span></label>
+                        <label for="ruc"><input type="radio" name="documento" id="ruc" value="RUC" disabled><span>RUC</span></label>
+                        <label for="cedula"><input type="radio" name="documento" id="cedula" value="Cédula" disabled><span>Cédula</span></label>
+                        <label for="pasaporte"><input type="radio" name="documento" id="pasaporte" value="Pasaporte" disabled><span>Pasaporte</span></label>
+                    </div>
+                </div>
+                <div class="documento-telefono-container">
+                    <label for="numero-documento">
+                        <span>Número Documento</span>
+                        <input type="number" id="numero-documento" name="numero-documento" placeholder="Numero Documento" min="0" disabled>
+                    </label>
+                    <label for="telefono">
+                        <span>Telefono</span>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono" disabled>
+                    </label>
+                </div>
+                <label for="direccion" >
+                    <span>Dirección</span>
+                    <input class="direccion" type="text" id="direccion" name="direccion" placeholder="Tu direccion" disabled>
+                </label>
+                <h1 class="titulos">Cuenta</h1>
+                <hr>
+                <span>Rol</span>
+                <div class="btn-group">
+                    <div class="grupo-boton" role="roles">
+                        <label for="administrador"><input type="radio" name="rol" id="administrador" value="administrador" disabled><span>Administrador</span></label>
+                        <label for="cajero"><input type="radio" name="rol" id="cajero" value="cajero" disabled><span>Cajero</span></label>
+                        <label for="vendedor"><input type="radio" name="rol" id="vendedor" value="vendedor" disabled><span>Vendedor</span></label>
+                        <label for="almacenero"><input type="radio" name="rol" id="almacenero" value="almacenero" disabled><span>Almacenero</span></label>
+                    </div>
+                </div>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" placeholder="Tu email" disabled>
+                </label>
+            </form>
+            <a href="#" class="btn-close-popup" id="btn-close-popup"> Cerrar </a>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./popup.js"></script>
+</body>
+
+</html>
