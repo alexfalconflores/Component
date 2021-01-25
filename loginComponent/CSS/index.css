@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+.container {
+    margin-top: 6%;
+}
+
+.modal-container {
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.form-container {
+    padding: 90px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    
+    
+}
+
+.logo {
+    margin: 0% auto;
+}
+
+/*Color del logo*/
+.svg-logo{
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 420px;
+    height: 253px;
+}
+.color {
+    fill: white;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8% 92%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #707070;
+}
+
+.input-div.one {
+    margin-top: 20px;
+}
+
+.input-div.two {
+    margin-bottom: 4px;
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono i {
+    color: #707070;
+    transition: 0.3s;
+}
+
+.input-div>div {
+    position: relative;
+    height: 40px;
+}
+
+.input-div>div h5 {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #707070;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.input-div>div>input {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5em 0.7rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.btn {
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+    border-radius: 18px;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #10bce3, #3dd6af, #10bce3);
+    background-size: 200%;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-position: right;
+}
+
+.input-div.focus .icono i {
+    color: #ffffff;
+}
+
+.input-div.focus div h5 {
+    top: -5px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.input-div::after,
+.input-div::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+.input-div::before {
+    right: 50%;
+}
+
+.input-div::after {
+    left: 50%;
+}
+
+.input-div.focus::after,
+.input-div.focus::before {
+    width: 50%;
+}
