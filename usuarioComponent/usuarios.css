@@ -26,7 +26,29 @@ body {
     width: 100%;
     padding: 3rem;
     position: relative;
+    overflow-y: scroll;
 }
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar {
+    width: .8rem; 
+    height: .8rem;   
+    /* background:rgba(255,255,255,.4); */
+    background: transparent;
+    /* border-radius: .4rem; */
+}
+::-webkit-scrollbar:hover {
+    /* background: #b3b3b3; */
+    background: transparent;
+    box-shadow: 0 0 .2rem .1rem rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar:hover:active {
+    /* background: #999; */
+    background: transparent;
+}
+
 .usuario__container{
     margin: 7rem 0rem;
     padding-bottom: 1rem;
