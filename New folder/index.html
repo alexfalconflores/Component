@@ -10,121 +10,45 @@
 </head>
 
 <body>
-    <div style="display: flex;">
-        <div style="display: flex;flex-direction: column; background-color: aquamarine; border-radius: 20px; width: 696px; height: 405px;">
+    <div class="graficos">
+        <div class="chart-container">
             <h2>Total Ganancias</h2>
             <h1>S/. 1000.00</h1>
-            <div class="chart-container" style="height: 190px; width: 636px; display: flex;">
+            <div class="chart">
                 <canvas id="popChart"></canvas>
             </div>
         </div>
-        <div style="display: flex;flex-direction: column ;background-color: antiquewhite; border-radius: 20px; width: 349px; height: 405px">
+        <div class="donut-container">
             <h1>Total Ventas</h1>
             <h2>Ventas por Categoria</h2>
-            <div class="donut-container" style="height: 349px; width: 505px;">
+            <div class="donut">
                 <canvas id="donutChart"></canvas>
+            </div>
+            <div class="total-ventas">
+                <h1>Total Ventas</h1>
+                <h2>235</h2>
+            </div>
+        </div>
+        <div class="producto-mes-container">
+            <h1>Producto más vendido del mes</h1>
+            <div>
+                <img src="./assets/inka.png" alt="inka kola">
+            </div>
+            <div>
+                <h2>Nombre</h2>
+                <h1>Inka Kola 500 ML</h1>
+            </div>
+            <div>
+                <h2>Categoría</h2>
+                <h1>Gaseosas</h1>
+            </div>
+            <div>
+                <h2>Ganancias</h2>
+                <h1>S/. 1000.00</h1>
             </div>
         </div>
     </div>
-
-    <script>
-        var popCanvas = document.getElementById('popChart').getContext('2d');
-        let donutCanvas = document.getElementById('donutChart').getContext('2d');
-        // donutCanvas.stylus.display="flex";
-        // var popChart = document.getElementById("popChart").getContext("2d");
-        Chart.defaults.global.defaultFontFamily = "Roboto";
-        Chart.defaults.global.defaultFontSize = 18;
-        Chart.defaults.global.defaultFontColor = 'blue';
-
-
-        var barchart = new Chart(popCanvas, {
-            type: "bar",
-            data: {
-                labels: ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"],
-                datasets: [{
-                    label: "",
-                    data: [250, 300, 1000, 450, 450, 450, 450],
-                    backgroundColor: [
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        'rgba(212, 166, 40, 1)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    xAxes: [{
-                        gridLines: {
-                            display: false
-                        }
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                },
-                legend: {
-                    display: true,
-                    position: 'bottom',
-                    labels: {
-                        boxWidth: 0,
-                        fontColor: 'rgba(60,180,100)'
-                    }
-                },
-                tooltips: {
-                    cornerRadius: 10,
-                    caretSize: 10,
-                    xPadding: 16,
-                    yPadding: 10,
-                    backgroundColor: 'rgba(0, 150, 100, 0.9)',
-                    titleFontStyle: 'normal',
-                    titleMarginBottom: 15
-                }
-            }
-        });
-
-        var donutchart = new Chart(donutCanvas, {
-            type: "doughnut",
-            data: {
-                labels: ["Arroz", "Fideos", "Aceites"],
-                datasets: [{
-                    label: "Semana",
-                    data: [1000, 500, 300],
-                    backgroundColor: [
-                        'rgba(189, 99, 210, 1)',
-                        'rgba(212, 166, 40, 1)',
-                        '#E97B87'
-                    ]
-                }]
-            },
-            options: {
-                legend: {
-                    display: true,
-                    position: 'bottom',
-                    labels: {
-                        // rotation: 20,
-                        boxWidth: 20,
-                        fontColor: 'rgba(60,180,100)',
-                        fontSize: 10
-                    }
-                }
-            },
-            tooltips: {
-                cornerRadius: 0,
-                caretSize: 0,
-                xPadding: 0,
-                yPadding: 0,
-                backgroundColor: 'rgba(0, 150, 100, 0.9)',
-                titleFontStyle: 'normal',
-                titleMarginBottom: 15
-            }
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

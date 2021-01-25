@@ -1,29 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* *{
+
+*{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #252525;
+}
+.graficos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.chart-container{
+    display: flex;
+    flex-direction: column;
+    width: 69.6rem;
+    height: 40.5rem;
+    background-color: #2B2B2B;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.chart-container h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.chart-container h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.chart-container .chart{
+    display: block;
+    width: 63.6rem;
+    height: 19rem;
+}
+.donut-container{
+    display: flex;
+    flex-direction: column;
+    width: 34.9rem;
+    height: 40.5rem;
+    background-color: #2B2B2B;
+    border-radius: 2rem;
+    /* padding: 3rem; */
+}
+.donut-container > h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.donut-container > h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 3rem;
+}
+.donut-container .donut{
+    display: flex;
+    width: 50.5rem;
+    height: 30rem !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-container .total-ventas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    margin-bottom: 3rem;
+}
+.donut-container .total-ventas h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.donut-container .total-ventas h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+/* .donut-container .donut > .chartjs-dender-monitor{
+    display: block;
+    width: 24.8rem !important;
+    height: 24rem !important;
 } */
-
-
-/* los hexadecimales ya te envie */
-.verde{
-    background-color: Hexadecimal Verde
-    }
-    
-    .rojo{
-    background-color: Hexadecimal Rojo;
-    }
-    
-    .azul{
-    background-color: Hexadecimal Azul;
-    }
-    
-    .amarillo{
-    background-color: Hexadecimal Amarillo;
-    }
-/* antes era nav */
-.cajita{
-    ......
+.producto-mes-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 34.9rem;
+    height: 40.5rem;
+    background-color: #2B2B2B;
+    border-radius: 2rem;
+    padding: 3rem;
+    font-weight: 400;
+}
+.producto-mes-container > h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.producto-mes-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.producto-mes-container div > img{
+    display: flex;
+    width: 13.3rem;
+    height: 17.1rem;
+    margin-bottom: 1rem;
+}
+.producto-mes-container div > h2{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #707070;
+}
+.producto-mes-container div > h1{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
 }
