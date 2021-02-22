@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevo.css">
+    
+</head>
+
+<body>
+    <div class="container" id="box-formulario">
+        <div class="box-formulario">
+            <form action="" method="post">
+                <h1 class="titulos">Datos</h1>
+                <hr>
+                <label for="ruc">
+                    <span>Ruc</span>
+                    <input type="number" id="ruc" name="ruc" placeholder="12345678912" required>
+                </label>
+                <label for="compania">
+                    <span>Compañia</span>
+                    <input type="text" id="compania" name="compania" placeholder="Nombre Compañia" required>
+                </label>
+                <label for="contacto">
+                    <span>Contacto</span>
+                    <input type="text" id="contacto" name="contacto" placeholder="Nombre Contacto" required>
+                </label>
+                <label for="cargo">
+                    <span>Cargo</span>
+                    <input list="cargos" id="cargo" name="cargo" placeholder="Cargo" required>
+                    <datalist id="cargos">
+                        <option value="Vendedor"></option>
+                        <option value="Vendedor"></option>
+                        <option value="Vendedor"></option>
+                        <option value="Vendedor"></option>
+                    </datalist>
+                </label>
+                <label for="celular">
+                    <span>Celular</span>
+                    <input type="number" id="celular" name="celular" placeholder="Número de celular - opcional">
+                </label>
+                <span>Imagen</span>
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Arrastre y suelte su archivo o haga click sobre mi para cargar</span>
+                    <input type="file" name="myFile" id="myFile" class="drop-zone__input" accept=".jpg, .png, .jpeg" >
+                </div>
+                <input type="submit" value="Insertar">
+                <!-- <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a> -->
+                <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar">
+            </form>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./drag-drog-upload.js"></script>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

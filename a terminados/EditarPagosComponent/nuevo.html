@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevo.css">
+    
+</head>
+
+<body>
+    <div class="container" id="box-formulario">
+        <div class="box-formulario">
+            <form action="" method="post">
+                <h1 class="titulos">Pagos</h1>
+                <hr>
+                <label for="codigo-venta">
+                    <span>Código Venta</span>
+                    <input type="text" id="codigo-venta" name="codigo-ventanombre" placeholder="Codigo Venta" disabled>
+                </label>
+                <span>Tipo de Pago</span>
+                <div class="btn-group">
+                    <div class="grupo-boton" role="tipo-pagos">
+                        <label for="credito"><input type="radio" name="tipo-pago" id="credito" value="Crédito"><span>Crédito</span></label>
+                        <label for="debito"><input type="radio" name="tipo-pago" id="debito" value="Débito"><span>Débito</span></label>
+                        <label for="efectivo"><input type="radio" name="tipo-pago" id="efectivo" value="Efectivo"><span>Efectivo</span></label>
+                    </div>
+                </div>
+                <label for="total-pagar">
+                    <span>Total a Pagar</span>
+                    <input type="text" id="total-pagar" name="total-pagar" placeholder="S/." disabled>
+                </label>
+                <input type="submit" value="Insertar">
+                <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

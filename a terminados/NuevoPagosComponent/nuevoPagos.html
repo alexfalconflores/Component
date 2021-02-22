@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevoPagos.css">
+    <script src="https://kit.fontawesome.com/54aed50ae0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="box-formulario">
+        <div style="display: flex;">
+            <div class="box-formulario" style="display: inline-block;">
+                <form action="" method="post">
+                    <h1 class="titulos">Pagos</h1>
+                    <hr>
+                    <label for="codigo-venta">
+                        <span>Código Venta</span>
+                        <input type="text" id="codigo-venta" name="codigo-ventanombre" placeholder="Codigo Venta" disabled>
+                    </label>
+                    <span>Tipo de Pago</span>
+                    <div class="btn-group">
+                        <div class="grupo-boton" role="tipo-pagos">
+                            <label for="credito"><input type="radio" name="tipo-pago" id="credito" value="Crédito"><span>Crédito</span></label>
+                            <label for="debito"><input type="radio" name="tipo-pago" id="debito" value="Débito"><span>Débito</span></label>
+                            <label for="efectivo"><input type="radio" name="tipo-pago" id="efectivo" value="Efectivo"><span>Efectivo</span></label>
+                        </div>
+                    </div>
+                    <label for="total-pagar">
+                        <span>Total a Pagar</span>
+                        <input type="text" id="total-pagar" name="total-pagar" placeholder="S/." disabled>
+                    </label>
+                    <input type="submit" value="Insertar">
+                    <!-- <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a> -->
+                    <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar">
+                </form>
+            </div>
+            <div class="ladob">
+                <form class="search">
+                    <input class="input" type="text" placeholder="Buscar...">
+                    <div>
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr >
+                                <th>Fecha</th>
+                                <th>Serie</th>
+                                <th>Número</th>
+                                <th>Cliente</th>
+                                <th>Usuario</th>
+                                <th>Documento</th>
+                                <th>Impuesto</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                            <tr>
+                                <td>26 dic 2019</td>
+                                <td>1</td>
+                                <td>23</td>
+                                <td>Ana</td>
+                                <td>Jorge Luis Eduardo</td>
+                                <td>Factura</td>
+                                <td>18%</td>
+                                <td>S/. 55.00</td>
+                                <td>Aceptado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./popup.js"></script>
+</body>
+</html>

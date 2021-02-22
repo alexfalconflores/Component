@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nuevoPagos.css">
+    <script src="https://kit.fontawesome.com/54aed50ae0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="box-formulario">
+        <div>
+            <div class="box-formulario one">
+                <form action="" method="post">
+                    <h1 class="titulos">Nueva Compra</h1>
+                    <hr>
+                    <label for="cliente">
+                        <span>Proveedor</span>
+                        <input list="proveedores" id="cliente" name="cliente" placeholder="Clientes">
+                        <datalist id="proveedores">
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                            <option value="Alex Stefano Falcon Flores"></option>
+                        </datalist>
+                    </label>
+                    <span>Comprobante</span>
+                    <div class="btn-group">
+                        <div class="grupo-boton" role="tipo-pagos">
+                            <label for="factura"><input type="radio" name="tipo-pagos" id="factura" value="Factura"><span>Factura</span></label>
+                            <label for="boleta"><input type="radio" name="tipo-pagos" id="boleta" value="Boleta"><span>Boleta</span></label>
+                            <label for="ticket"><input type="radio" name="tipo-pagos" id="ticket" value="Ticket"><span>Ticket</span></label>
+                            <label for="guia"><input type="radio" name="tipo-pagos" id="guia" value="Guia"><span>Guia</span></label>
+                        </div>
+                    </div>
+                    <div class="fila3">
+                        <label for="serie" class="serie">
+                            <span>Serie</span>
+                            <input type="text" id="serie" name="serie" placeholder="Serie" disabled>
+                        </label>
+                        <label for="numero" class="numero">
+                            <span>Número</span>
+                            <input type="text" id="numero" name="numero" placeholder="numero" disabled>
+                        </label>
+                        <label for="impuesto" class="impuesto">
+                            <span>Impuesto %</span>
+                            <input type="text" id="impuesto" name="impuesto" placeholder="00" value="" disabled>
+                        </label>
+                    </div>
+                    <input type="submit" value="Insertar">
+                    <!-- <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a> -->
+                    <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar">
+                </form>
+            </div>
+            <div class="ladob">
+                <form class="search">
+                    <input class="input" type="text" placeholder="Buscar...">
+                    <div>
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr >
+                                <th>Articulo</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Inka Kola</td>
+                                <td>3</td>
+                                <td>S/. 4.50</td>
+                                <td>S/. 13.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box-formulario two">
+                <form>
+                    <label for="subtotal">
+                        <span>Subtotal</span>
+                        <input type="text" id="subtotal" name="subtotal" placeholder="Subtotal" disabled>
+                    </label>
+                    <label for="total-impuesto">
+                        <span>Total Impuesto</span>
+                        <input type="text" id="total-impuesto" name="total-impuesto" placeholder="Total impuesto" disabled>
+                    </label>
+                    <label for="total">
+                        <span>Total</span>
+                        <input type="text" id="total" name="total" placeholder="Total" value="" disabled>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button id="button-popup">Clikeame</button>
+    <script src="./popup.js"></script>
+</body>
+</html>
